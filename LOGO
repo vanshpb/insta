@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        body
+        {
+            display:block;
+            justify-content:left;
+            align-items:center;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+        .insta
+        {
+            height:200px;
+            width:200px;
+            border-radius: 35px;
+            background: radial-gradient(circle at 30% 107%,#fdf497 5%,#ee3838ef 45%,#d6249f 60%,rgb(126, 6, 126) 90%);
+            display:grid;
+            place-items: center;
+        }
+        .innerbox
+        {
+            width: 120px;
+            height: 120px;
+            border:10px solid white;
+            border-radius:32px;
+            display:grid;
+            place-items:center;
+            position: relative;
+        }
+        .innerbox::before
+        {
+            content:'';
+            width:45px;
+            height:45px;
+            border: 10px solid white;
+            border-radius: 50%;
+            background: transparent;
+            position: absolute;
+        }
+        .innerbox::after
+        {
+            content:'';
+            width: 10px;
+            height: 10px;
+            border: 2px solid rgb(255, 255, 255);
+            border-radius: 50%;
+            background: rgb(255, 255, 255);
+            position: absolute;
+            top: 8px;
+            right: 10px; 
+            
+
+        } 
+        .qr{
+            display: flex;
+
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1"><h1></h1></div>
+    <div class="insta">
+        <div class="innerbox">
+           
+
+        </div>
+    </div>  
+    <br>
+     <table class="qr" border="2px" width="212px" >
+                <tr>
+                    <td>
+                    <div><img src="insta-qr.jpg" height="200px" width="200px"></div>
+                </td>
+                </tr>
+            </table> 
+</body>
+</html>
